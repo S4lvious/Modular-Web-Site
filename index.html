@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <div class="logo">
+            <a href="" class="img">LOGO</a>
+        </div>
+            <ul class="navlist">
+                <li><a href="index.html" class="navitem">Home</a></li>
+                <li><a href="#" class="navitem">Shop</a></li>
+                <li><a href="aboutus.html" class="navitem">Chi siamo</a></li>
+                <li><a href="#" class="navitem">Contatti</a></li>
+            </ul>
+    </div>
+
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+<section class="cover">
+    <div class="cover___filter"></div>
+    <div class="cover___text">
+        <H1>Streetwear Brand</H1>
+        <h2>This is the second phrases of the site.</h2>
+        <a href="" class="button">Shop Now</a>
+    </div>
+</section>
+<section class="cards">
+    <div class="card">
+    <img class="card-image" src="shoes1.jpg" alt="AF1" width="400" height="260">
+    <div class="card-text">
+    <h3>Air Force 1</h3>
+    <p>La leggenda continua a risplendere con Nike Air Force 1 '07 l'edizione originale da basket che rivisita un classico molto amato: strati esterni resistenti con impunture, finiture essenziali e il giusto tocco di lucentezza per valorizzarti al meglio. </p>
+    </div>
+    </div>
+    <div class="card">
+    <img class="card-image" src="shoes2.jpg" alt="AF2" width="400" height="260">
+    <div class="card-text">
+    <h3>Air Force 1 High</h3>
+    <p>Questa scarpa racchiude tutto ciò che ami di più: strati esterni ben definiti, uno stile da basket di grande impatto e la giusta dose di brillantezza per far risplendere il tuo stile di gioco. Il collare imbottito a taglio alto con chiusura a strappo aggiunge un comfort classico.</p>
+    </div>
+    </div>
+    <div class="card">
+    <img class="card-image" src="shoes3.jpg" alt="AF3" width="400" height="260">
+    <div class="card-text">
+    <h3>Air Max 270G</h3>
+    <p>Sfoggia un look leggendario con Nike Air Max 270 G. La silhouette è una ricostruzione fedele dell'icona originale Big Air, con l'aggiunta di mesh traspirante e un innovativo motivo di trazione per prestazioni di gioco ai massimi livelli.</p>
+    </div>
+    </div>
+</section>
+<section class="banner">
+<div class="banner-img">
+    <img class="banner-image" src="shoes1.jpg">
+</div>
+<div class="banner-text">
+    <h2>Scopri la nuova collezione</h2>
+    <h3>Scontata da oggi al 30%</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos ex repudiandae labore reprehenderit alias odio suscipit, autem voluptas quaerat tempora dicta id vitae facilis corporis obcaecati cum repellat quod quas, consequatur soluta similique. Eveniet, ullam porro. Quidem, obcaecati ex.</p>
+    <a href="" class="banner-button">Scopri di più</a>
+</div>
+</section>
+<footer class="footer">
+    <p>Copyright Salvatore Liccardo</p>
+</footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navlist = document.querySelector(".navlist");
+    hamburger.addEventListener("click", () =>{
+        hamburger.classList.toggle("active");
+        navlist.classList.toggle("active");
+})
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector("header").style.height = "40px";
+    document.querySelector("header").style.fontSize = "16px";
+  } else {
+    document.querySelector("header").style.height = "70px";
+    document.querySelector("header").style.fontSize = "20px";
+  }
+}
+</script>
+</body>
+</html>

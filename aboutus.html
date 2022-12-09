@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" class="img">LOGO</a>
+        </div>
+            <ul class="navlist">
+                <li><a href="index.html" class="navitem">Home</a></li>
+                <li><a href="#" class="navitem">Shop</a></li>
+                <li><a href="#" class="navitem">Chi siamo</a></li>
+                <li><a href="#" class="navitem">Contatti</a></li>
+            </ul>
+    </div>
+
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+<section class="cover cover--single">
+    <div class="cover___filter cover--filter--single"></div>
+    <div class="cover___text">
+        <H1>Streetwear Brand</H1>
+        <h2>This is the second phrases of the site.</h2>
+    </div>
+</section>
+
+<article class="aboutus">
+    <div class="aboutus___text">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quaerat magni quos est aliquam dolorum modi, repellat, suscipit doloribus nihil minima nam mollitia eum consequatur quod, enim odit ipsum! Repellendus voluptatum earum, at deleniti delectus consequuntur. Pariatur quam, deserunt minima voluptatem voluptate unde enim aperiam corporis numquam veritatis id vero dolores iure dignissimos nulla? Doloribus rerum illum ex aliquid doloremque corrupti velit eligendi repudiandae ea quaerat animi beatae quisquam nisi, laboriosam fugiat iste? Quasi at consequatur dolores eum vel! Totam perferendis enim dolorem repellat veniam praesentium nostrum sunt tenetur ipsa adipisci, vero cupiditate architecto, at, officiis quam consequuntur? Officiis, exercitationem molestias! Illum officiis aliquam, odio similique tempora et odit quaerat, voluptate vel beatae magni voluptatum saepe laborum? Mollitia dolore quod natus possimus blanditiis doloribus vel. Dignissimos saepe tempora quisquam deserunt possimus iure ab velit libero animi obcaecati. Blanditiis eligendi, repudiandae neque minima cupiditate officia aspernatur. A sunt quidem ea quo magni debitis impedit repellendus quae laborum atque alias, culpa soluta dolores rem temporibus exercitationem doloremque explicabo! Fugiat sunt est maxime aspernatur deserunt doloremque neque, eum at, animi debitis illum rerum. Impedit facilis reiciendis ducimus, consectetur molestiae voluptatum iure obcaecati quae placeat, beatae possimus. Aperiam odio adipisci qui voluptate doloremque eaque distinctio maxime beatae esse veritatis! Quas facilis ducimus distinctio maxime debitis molestiae doloremque eius explicabo animi iste vero id culpa libero reprehenderit velit unde voluptate a suscipit, adipisci sit amet assumenda! Exercitationem rem molestias dolor aperiam sit temporibus adipisci earum ea veniam autem, voluptatem, provident, iste illo mollitia accusamus doloremque explicabo eos? Esse reprehenderit corrupti provident numquam voluptatibus perferendis maxime quis soluta eaque dolorem natus, fuga voluptates consequatur ex fugit rerum, porro illum doloremque. Ducimus earum molestiae, nisi consectetur amet culpa quasi veritatis exercitationem ad praesentium explicabo reprehenderit iusto facilis cumque illum eaque dolor, libero assumenda magnam! Provident, sit id!</p>
+    </div>
+</article>
+
+
+<footer class="footer">
+    <p>Copyright Salvatore Liccardo</p>
+</footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navlist = document.querySelector(".navlist");
+    hamburger.addEventListener("click", () =>{
+        hamburger.classList.toggle("active");
+        navlist.classList.toggle("active");
+})
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector("header").style.height = "40px";
+    document.querySelector("header").style.fontSize = "16px";
+  } else {
+    document.querySelector("header").style.height = "70px";
+    document.querySelector("header").style.fontSize = "20px";
+  }
+}
+</script>
+</body>
+</html>
